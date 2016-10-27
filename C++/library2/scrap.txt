@@ -1,0 +1,91 @@
+
+	//size_t Segment::getEncodingLength(bool eliminatingInternalFreeSpace) {
+	//	size_t total = 0;
+	//	total += Header::headLenFor(bodyLen);
+	//	total += bodyLen;
+	//	if (metadata) {
+	//		if (!eliminatingInternalFreeSpace) total += freeSpace;
+	//		total += metadata->getEncodingLength(eliminatingInternalFreeSpace);
+	//	}
+	//	return total;
+	//}
+
+	//size_t Segment::write(byte* dst, bool eliminatingInternalFreeSpace) {
+	//	size_t written = 0;
+	//	written += Header(type(), bodyLen).write(dst + written);
+	//
+	//	memcpy(dst + written, body, bodyLen);
+	//	written += bodyLen;
+	//
+	//	if (metadata) {
+	//		if (!eliminatingInternalFreeSpace) {
+	//			Header::freeSegment(freeSpace).write(dst + written); // if freeSpace==0, this does nothing
+	//			written += freeSpace;
+	//		}
+	//		written += metadata->write(dst + written, eliminatingInternalFreeSpace);
+	//	}
+	//	return written;
+	//}
+	
+	//size_t List::getEncodingLength(bool eliminatingInternalFreeSpace) {
+	//	if (!eliminatingInternalFreeSpace) // easy case: segment body length as is
+	//		return Segment::getEncodingLength(false);
+	//
+	//	size_t total = 0;
+	//	total += Header::headLenFor(bodyLen);
+	//	for (Segment* s : *this) // lazy-load iterator
+	//		total += s->getEncodingLength(true);
+	//	if (metadata)
+	//		total += metadata->getEncodingLength(true);
+	//	return total;
+	//}
+
+	//size_t List::write(byte* dst, bool eliminatingInternalFreeSpace) {
+	//	if (!eliminatingInternalFreeSpace)
+	//		return Segment::write(dst, false);
+	//
+	//	size_t written = 0;
+	//	written += Header(type(), bodyLen).write(dst + written);
+	//	for (Segment* s : *this) // lazy-load iterator
+	//		written += s->write(dst + written, true);
+	//	if (metadata)
+	//		written += metadata->write(dst + written, true);
+	//	return written;
+	//}
+
+	//size_t List::write(ostream& out, bool eliminatingInternalFreeSpace) {
+	//	if (body && !eliminatingInternalFreeSpace)
+	//		return Segment::write(out, false);
+	//	HeaderTree ht(*this);
+	//	return Segment::write(out, ht);
+	//}
+
+	//size_t Data::getEncodingLength(bool eliminatingInternalFreeSpace) {
+	//	// Note: No header and metadata first
+	//
+	//	if(!eliminatingInternalFreeSpace)
+	//		return arraySize - freeSpace;
+	//
+	//	size_t total = 0;
+	//	if (metadata)
+	//		total += metadata->getEncodingLength(true);
+	//	for (Segment* s : *this) // lazy-load iterator
+	//		total += s->getEncodingLength(true);
+	//	return total;
+	//}
+
+	//size_t Data::write(byte* dst, bool eliminatingInternalFreeSpace) {
+	//	// Note: Does not write a header and metadata comes first
+	//	if (!eliminatingInternalFreeSpace) {
+	//		memcpy(dst, body, arraySize - freeSpace);
+	//		return arraySize - freeSpace;
+	//	}
+	//
+	//	size_t written = 0;
+	//	if (metadata)
+	//		written += metadata->write(dst + written, true);
+	//	for (Segment* s : *this) // lazy-load iterator
+	//		written += s->write(dst + written, true);
+	//	return written;
+	//}
+	

@@ -15,4 +15,4 @@ We present the first candidate medium that is simultaneously suitable for use as
 
 ### Inline metalanguage programming:
 ![](/figures/sickAndTired.PNG)
-![](/figures/fib.png)
+![](/figures/fib.PNG)

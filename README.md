@@ -1,5 +1,7 @@
 # Infra
 
+![](/figures/InfraSlogan.PNG)
+
 Let us define ``text infrastructure" as the set of text encoding, display, manipulation, and processing artifacts ubiquitous in computing: ASCII, UTF8, text editors, Text-Field UI widgets, terminals / consoles, virtual keyboards, String and human-readable format libraries, escape sequences, line-ending and whitespace conventions, etc.
 The main idea of this paper is that an alternative infrastructure, centered around metadata, can be positioned to fill the same role that the text infrastructure currently plays, while bringing with it the building blocks of structure and abstraction, time and space encoding efficiencies, improved human-readability, and richer ways to author and interact with 'raw' and persistable information.
 With a new media such as this made common across user environments, the lines between the natures of file formats, data structures, hypermedia, source code, and graphical user-interfaces, would be blurred, allowing the best of all worlds to exist evenly throughout.

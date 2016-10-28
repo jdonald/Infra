@@ -10,6 +10,7 @@ We present the first candidate medium that is simultaneously suitable for use as
 
 ![](/figures/UTF8vsInfra.png)
 ![](/figures/fish1redCompare.png)
+### Metadata segment association rules:
 ![](/figures/metadataAssociation.PNG)
 ![](/figures/cssApplied.PNG)
 

@@ -124,7 +124,7 @@ public class Editor extends Observable implements GLEventListener, ParentOfView,
 		//setModel(Examples.simpleSave());
 		//setModel(Examples.url());
 		//setModel(Examples.nameAgeTable());
-		setModel(Examples.fileObject());
+		//setModel(Examples.fileObject());
 	}
 
 	public void setModel(Node tree) {

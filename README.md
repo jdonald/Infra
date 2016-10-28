@@ -14,5 +14,5 @@ We present the first candidate medium that is simultaneously suitable for use as
 ![](/figures/cssApplied.png)
 
 Inline metalanguage programming:
-![](/figures/sickAndTired.png)
+![](/figures/sickAndTired.PNG)
 ![](/figures/fib.png)

@@ -13,6 +13,6 @@ We present the first candidate medium that is simultaneously suitable for use as
 ![](/figures/metadataAssociation.PNG)
 ![](/figures/cssApplied.png)
 
-Inline metalanguage programming:
+### Inline metalanguage programming:
 ![](/figures/sickAndTired.PNG)
 ![](/figures/fib.png)

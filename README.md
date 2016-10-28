@@ -7,3 +7,12 @@ The main idea of this paper is that an alternative infrastructure, centered arou
 With a new media such as this made common across user environments, the lines between the natures of file formats, data structures, hypermedia, source code, and graphical user-interfaces, would be blurred, allowing the best of all worlds to exist evenly throughout.
 No modality of computing would be deprived of a parsed encoding paradigm, data-driven presentation abstractions, or interactive computation.
 We present the first candidate medium that is simultaneously suitable for use as a high-efficiency binary metaformat, a human-readable markup language, a programming language, and most importantly, as vanilla plaintext - playing any role that UTF8 currently plays.
+
+![](/figures/UTF8vsInfra.png)
+![](/figures/fish1redCompare.png)
+![](/figures/metadataAssociation.PNG)
+![](/figures/cssApplied.png)
+
+Inline metalanguage programming:
+![](/figures/sickAndTired.png)
+![](/figures/fib.png)

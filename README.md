@@ -11,8 +11,8 @@ We present the first candidate medium that is simultaneously suitable for use as
 ![](/figures/UTF8vsInfra.png)
 ![](/figures/fish1redCompare.png)
 ![](/figures/metadataAssociation.PNG)
-![](/figures/cssApplied.png)
+![](/figures/cssApplied.PNG)
 
 ### Inline metalanguage programming:
 ![](/figures/sickAndTired.PNG)
-![](/figures/fib.PNG)
+![](/figures/fib.png)
